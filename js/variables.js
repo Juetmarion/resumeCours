@@ -1,22 +1,37 @@
-/* Les types de letiables */
+/* Les types de variables */
 
-/* Les nombres */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+                                    /* Les nombres */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 let a = 2
 let b = 3.4123
 let c = -509
 let d = 1/3
 
-/* Les chaines de caractère */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+                                 /* Les chaines de caractère */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 let a = "Salut les gens"
 let b = 'Re-Salut les gens'
 let a = "Ceci n'est pas poblématique" // double + pratique!
 let b = 'Ceci n\'est pas problématique'
 
-/* Les booléens */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+                                    /* Les booléens */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 let vrai = true
 let je_suis_faux = false
 
-/* Les tableaux */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+                                   /* Les tableaux */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 let eleves = ['Jean', 'Marc', 'Marion']
 let demo = [true, 10, 'Marc']
 eleves[0] // Jean
@@ -24,7 +39,11 @@ eleves[2] // Marion
 demo[1] // 10
 demo[18] // undefined
 
-/* Les objets */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+                                    /* Les objets */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 let eleve = {
     clef: 'valeur',
     nom: 'Jean',
@@ -49,7 +68,11 @@ let eleve = {
 eleve.notes.math // 18
 eleves.nom // undefined
 
-/* Typage faible */
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+                                    /* Typage faible */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 let a = '1' 
 let b = 1
 // a + b = '11'
