@@ -1,31 +1,31 @@
-/* Les types de variables */
+/* Les types de letiables */
 
 /* Les nombres */
-var a = 2
-var b = 3.4123
-var c = -509
-var d = 1/3
+let a = 2
+let b = 3.4123
+let c = -509
+let d = 1/3
 
 /* Les chaines de caractère */
-var a = "Salut les gens"
-var b = 'Re-Salut les gens'
-var a = "Ceci n'est pas poblématique" // double + pratique!
-var b = 'Ceci n\'est pas problématique'
+let a = "Salut les gens"
+let b = 'Re-Salut les gens'
+let a = "Ceci n'est pas poblématique" // double + pratique!
+let b = 'Ceci n\'est pas problématique'
 
 /* Les booléens */
-var vrai = true
-var je_suis_faux = false
+let vrai = true
+let je_suis_faux = false
 
 /* Les tableaux */
-var eleves = ['Jean', 'Marc', 'Marion']
-var demo = [true, 10, 'Marc']
+let eleves = ['Jean', 'Marc', 'Marion']
+let demo = [true, 10, 'Marc']
 eleves[0] // Jean
 eleves[2] // Marion
 demo[1] // 10
 demo[18] // undefined
 
 /* Les objets */
-var eleve = {
+let eleve = {
     clef: 'valeur',
     nom: 'Jean',
     age: 18,
@@ -39,7 +39,7 @@ eleve.notes[1] // 4
 eleve['notes'] // [10, 4, 18]
 
 // De la même manière, les objets peuvent contenir des objets en valeur.
-var eleve = {
+let eleve = {
     notes: {
         math: 18,
         francais: 14   
@@ -50,8 +50,8 @@ eleve.notes.math // 18
 eleves.nom // undefined
 
 /* Typage faible */
-var a = '1' 
-var b = 1
+let a = '1' 
+let b = 1
 // a + b = '11'
 // b est convertit en chaine de caractère implicitement
 // a * b = 1 
