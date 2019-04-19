@@ -1,3 +1,8 @@
+
+/* La déclaration async function définit une fonction asynchrone qui renvoie un objet 
+AsyncFunction. Une fonction asynchrone est une fonction qui s'exécute de façon asynchrone 
+grâce à la boucle d'évènement en utilisant une promesse (Promise) comme valeur de retour. */
+
 var resolveAfter2Seconds = function() {
     console.log("Initialisation de la promesse lente");
     return new Promise(resolve => {
