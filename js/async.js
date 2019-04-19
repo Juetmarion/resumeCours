@@ -8,7 +8,7 @@ var resolveAfter2Seconds = function() {
     return new Promise(resolve => {
       setTimeout(function() {
         resolve("lente");
-        console.log("La promesse lente est terminée");
+        console.log("La promesse resolveAfter2Seconds lente est terminée");
       }, 2000);
     });
   };
@@ -18,13 +18,13 @@ var resolveAfter2Seconds = function() {
     return new Promise(resolve => {
       setTimeout(function() {
         resolve("rapide");
-        console.log("La promesse rapide est terminée");
+        console.log("La promesse resolveAfter1Second rapide est terminée");
       }, 1000);
     });
   };
   
   var sequentialStart = async function() {
-    console.log('==Début séquentiel==');
+    console.log('== Début séquentiel ==');
   
     // 1. L'exécution atteint ce point quasi-instantanément
     const lente = await resolveAfter2Seconds();
@@ -35,7 +35,7 @@ var resolveAfter2Seconds = function() {
   }
   
   var concurrentStart = async function() {
-    console.log('==Début concurrentiel avec await==');
+    console.log('== Début concurrentiel avec await ==');
     const lente = resolveAfter2Seconds(); // le minuteur démarre immédiatement
     const rapide = resolveAfter1Second();  // le minuteur démarre immédiatement
   
@@ -46,7 +46,7 @@ var resolveAfter2Seconds = function() {
   }
   
   var concurrentPromise = function() {
-    console.log('==Début concurrentiel avec Promise.all==');
+    console.log('== Début concurrentiel avec Promise.all ==');
     return Promise.all([resolveAfter2Seconds(), resolveAfter1Second()]).then((messages) => {
       console.log(messages[0]); // rapide
       console.log(messages[1]); // lente
